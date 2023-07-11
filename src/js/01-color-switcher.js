@@ -1,5 +1,5 @@
 const CHANGE_COLOR_DELAY = 1000;
-timerId = null;
+let timerId = null;
 
 const refs = {
   btnStart: document.querySelector('button[data-start]'),

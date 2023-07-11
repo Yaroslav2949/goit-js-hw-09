@@ -9,11 +9,11 @@ formInput.addEventListener('submit', onSubmiForm);
 
 function onSubmiForm(e) {
   e.preventDefault();
-  // приводимо до числа значення в інпутах 
+  // приводимо до числа значення в інпутах
   let delay = Number(delayInput.value);
-  let step = Number(stepInput .value);
+  let step = Number(stepInput.value);
   let amount = Number(amountInput.value);
-//  перебираємо інпут amount який задає кількість створення промісів та додаємо на кожній ітерації крок до затримки часу згідно умови завдання
+  //  перебираємо інпут amount який задає кількість створення промісів та додаємо на кожній ітерації крок до затримки часу згідно умови завдання
   for (let i = 1; i <= amount; i += 1) {
     delay += step;
     createPromise(i, delay)
@@ -23,7 +23,6 @@ function onSubmiForm(e) {
       .catch(({ position, delay }) => {
         Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
       });
-     
   }
 }
 
@@ -40,5 +39,3 @@ function createPromise(position, delay) {
     }, delay);
   });
 }
-
-
