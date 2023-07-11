@@ -45,7 +45,6 @@ const options = {
 
 flatpickr(flatpickrInput, options);
 
-
 function onStartBtn() {
   counter.start();
 }
