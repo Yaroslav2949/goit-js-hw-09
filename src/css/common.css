@@ -16,3 +16,62 @@ img {
   display: block;
   max-width: 100%;
 }
+input#datetime-picker {
+  width: 200px;
+  height: 32px;
+  border: none;
+  background: #d3dad3;
+  box-shadow: 0 6px 8px #a8a59f, 0 -2px 1px #fff;
+
+  text-align: center;
+  margin-right: 12px;
+  font-weight: 600;
+}
+
+button {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+
+  box-shadow: 0 3px 4px #9c9995;
+}
+.timer {
+  margin-top: 10px;
+  display: flex;
+}
+.field {
+  flex-direction: column;
+  margin-right: 30px;
+  display: flex;
+}
+.value {
+  text-align: center;
+  letter-spacing: 4px;
+  color: #523111;
+
+  font-size: 60px;
+  font-weight: 600;
+}
+.label {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(4, 0, 255);
+
+
+  font-size: 20px;
+  font-weight: 400;
+}
+button[type=submit] {
+    width: 80px;
+    height: 40px;
+    margin-left: 10px;
+     color: #361f1f;
+    text-shadow: 1px 1.6px 1px #fff; 
+    background-color: #f7eff4;
+    border-radius: 50px;
+   
+}
