@@ -71,7 +71,7 @@ const counter = {
       currentDate = Date.now();
       const deltaTime = selectedDate - currentDate;
       startBtn.disabled = true;
-   
+      flatpickrInput.disabled = true;
       if (deltaTime <= 0) {
         this.stop();
         Notify.success('Time end');
